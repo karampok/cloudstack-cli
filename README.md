@@ -7,10 +7,16 @@ cloudstack-cli uses the [cloudstack_client](https://github.com/niwo/cloudstack_c
 
 ## Installation
 
-Install the cloudstack-cli gem:
+Install the cloudstack-cli gem directly from the repo:
 
 ```sh
-$ gem install cloudstack-cli
+$ cat Gemfile
+source 'https://rubygems.org'
+
+gem 'cloudstack-cli', git: 'git@github.com:karampok/cloudstack-cli.git', branch: 'master'
+
+$ bundle install  
+$ bundle update  
 ```
 
 ## Setup
